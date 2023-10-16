@@ -5,7 +5,8 @@ import { DropAncientItemCommand } from '../impl/drop-ancient-item.command';
 
 @CommandHandler(DropAncientItemCommand)
 export class DropAncientItemHandler
-  implements ICommandHandler<DropAncientItemCommand> {
+  implements ICommandHandler<DropAncientItemCommand>
+{
   constructor(
     private readonly repository: HeroRepository,
     private readonly publisher: EventPublisher,
